@@ -1,6 +1,5 @@
 require 'sinatra'
 require 'rack/test'
-require 'dm-rspec'
 
 
 # setup test environment
@@ -15,5 +14,4 @@ end
 
 RSpec.configure do |config|
   config.include Rack::Test::Methods
-  config.include(DataMapper::Matchers)
 end
